@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Preston Holmes | Cofounder and CEO of Ascend Performance Marketing</title>
-<meta name="description" content="Preston Holmes is the cofounder and CEO of Ascend Performance Marketing, a door to door community solar sales company with 40 reps producing in New Mexico and Colorado. Knoxville, Tennessee native and former Division I soccer player at East Tennessee State.">
+<meta name="description" content="Preston Holmes is the cofounder and CEO of Ascend Performance Marketing, a door to door community solar sales company with 40 reps in New Mexico and Colorado. Knoxville native, 2021 state champion at Webb and former Division I soccer player at East Tennessee State.">
 <link rel="canonical" href="https://prestonholmes.com/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
@@ -43,9 +43,9 @@
     "givenName": "Preston",
     "familyName": "Holmes",
     "url": "https://prestonholmes.com/",
-    "image": "https://prestonholmes.com/preston-holmes.jpg",
+    "image": ["https://prestonholmes.com/preston-holmes.jpg", "https://prestonholmes.com/preston-holmes-solar-farm.jpg"],
     "jobTitle": "Cofounder and CEO",
-    "description": "Cofounder and CEO of Ascend Performance Marketing, a door to door community solar sales company with 40 reps producing in New Mexico and Colorado for SunShare and US Solar. Knoxville, Tennessee native and former Division I soccer player at East Tennessee State University.",
+    "description": "Cofounder and CEO of Ascend Performance Marketing, a door to door community solar sales company with 40 reps producing in New Mexico and Colorado for SunShare and US Solar. Knoxville, Tennessee native, 2021 Division II-A state soccer champion at the Webb School of Knoxville and former Division I soccer player at East Tennessee State University.",
     "worksFor": {
       "@type": "Organization",
       "name": "Ascend Performance Marketing",
@@ -55,20 +55,22 @@
       { "@type": "CollegeOrUniversity", "name": "East Tennessee State University", "url": "https://www.etsu.edu/" },
       { "@type": "HighSchool", "name": "Webb School of Knoxville", "url": "https://www.webbschool.org/" }
     ],
+    "award": "2021 Division II-A boys soccer state champion with the Webb School of Knoxville, 20 and 0",
+    "homeLocation": { "@type": "Place", "name": "Knoxville, Tennessee" },
     "knowsAbout": ["Community solar", "Door to door sales", "Sales team leadership", "Recruiting"],
     "email": "mailto:prestonholmes@ascendmarketing.org",
-    "address": { "@type": "PostalAddress", "addressRegion": "Tennessee", "addressCountry": "US" },
     "sameAs": [
       "https://www.linkedin.com/in/prestonholmes/",
       "https://www.instagram.com/preston.holmes_/",
       "https://www.instagram.com/preston_holmes_/",
-      "https://www.ascendmarketing.org/preston-holmes"
+      "https://www.ascendmarketing.org/preston-holmes",
+      "https://etsubucs.com/sports/mens-soccer/roster/preston-holmes/3111"
     ]
   }
 }
 </script>
 <style>
-/* Layout: one column, name first. Franklin Gothic style headings with a readable serif body. Blue accent, no gold, so it reads as Preston rather than Ascend. */
+/* Layout: one column, name first, then numbers, photos, the path in order, links. Franklin Gothic style headings with a readable serif body. Blue accent, so it reads as Preston rather than Ascend's black and gold. */
 :root {
   --bg: #f5f6f8;
   --surface: #ffffff;
@@ -77,6 +79,7 @@
   --muted: #6b7384;
   --line: #e1e4ea;
   --accent: #2457a6;
+  --accent-soft: #e6eefb;
   --accent-ink: #ffffff;
   --head: "Libre Franklin", "Franklin Gothic Medium", "Helvetica Neue", Arial, sans-serif;
   --body: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -85,14 +88,14 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0f1420; --surface: #161d2b; --ink: #eef1f7; --ink-2: #c0c7d6; --muted: #8e97aa;
-    --line: #27314a; --accent: #7fb0f0; --accent-ink: #0f1420;
+    --line: #27314a; --accent: #7fb0f0; --accent-soft: #1b2a45; --accent-ink: #0f1420;
     color-scheme: dark;
   }
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 18px; line-height: 1.6; }
-.wrap { max-width: 680px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); padding-block: 40px 56px; display: grid; gap: 40px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); padding-block: 40px 56px; display: grid; gap: 44px; }
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
@@ -102,32 +105,53 @@ header { display: grid; gap: 22px; }
 h1 { font-family: var(--head); font-weight: 800; font-size: clamp(42px, 11vw, 64px); line-height: .98; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
 .role { font-family: var(--head); font-weight: 700; font-size: 17px; letter-spacing: .01em; color: var(--ink-2); margin: 0; }
 .role a { color: inherit; }
-.tag { margin: 0; font-size: 19px; color: var(--ink-2); max-width: 36ch; text-wrap: pretty; }
+.tag { margin: 0; font-size: 19px; color: var(--ink-2); max-width: 38ch; text-wrap: pretty; }
 .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn { font-family: var(--head); font-weight: 700; font-size: 15px; text-decoration: none; border-radius: 8px; padding: 10px 16px; border: 1.5px solid var(--accent); color: var(--accent); }
 .btn.fill { background: var(--accent); color: var(--accent-ink); }
 
+.stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.stats li { padding: 16px 14px; display: grid; gap: 2px; align-content: start; border-left: 1px solid var(--line); }
+.stats li:first-child { border-left: 0; }
+.stats b { font-family: var(--head); font-weight: 800; font-size: clamp(22px, 5.4vw, 30px); line-height: 1.05; letter-spacing: -.01em; color: var(--ink); font-variant-numeric: tabular-nums; }
+.stats span { font-family: var(--head); font-weight: 500; font-size: 13px; color: var(--muted); line-height: 1.35; }
+
 h2 { font-family: var(--head); font-weight: 700; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
-section p { margin: 0 0 16px; max-width: 62ch; text-wrap: pretty; }
+section p { margin: 0 0 16px; max-width: 64ch; text-wrap: pretty; }
 section p:last-child { margin-bottom: 0; }
-.facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.facts li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
-.facts li:last-child { border-bottom: 0; }
-.facts b { font-family: var(--head); font-weight: 700; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding-top: 4px; }
+
+.photos { margin: 0; display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+.photos img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 12px; background: var(--line); }
+.photos figcaption { grid-column: 1 / -1; font-family: var(--head); font-weight: 500; font-size: 14px; color: var(--muted); }
+
+.path { list-style: none; margin: 0; padding: 0; display: grid; }
+.path li { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); }
+.path li:first-child { border-top: 0; padding-top: 2px; }
+.path .when { font-family: var(--head); font-weight: 800; font-size: 15px; color: var(--accent); padding-top: 2px; }
+.path .what { display: grid; gap: 2px; }
+.path .what b { font-family: var(--head); font-weight: 700; font-size: 17px; color: var(--ink); }
+.path .what span { color: var(--ink-2); }
+
 .links { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .links li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
 .links a { font-family: var(--head); font-weight: 700; font-size: 17px; }
 .links span { color: var(--muted); font-size: 16px; }
-.note { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+.note { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; gap: 12px; }
 .note p { margin: 0; }
-.email { font-family: var(--head); font-weight: 700; font-size: 17px; word-break: break-all; }
+.email { font-family: var(--head); font-weight: 700; font-size: 17px; overflow-wrap: anywhere; }
 footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; }
 footer a { color: inherit; }
 @media (min-width: 560px) {
   header { grid-template-columns: 168px minmax(0, 1fr); align-items: center; gap: 28px; }
   header .text { display: grid; gap: 14px; }
 }
-@media (max-width: 559px) { header .text { display: grid; gap: 14px; } }
+@media (max-width: 559px) {
+  header .text { display: grid; gap: 14px; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats li:nth-child(3) { border-left: 0; }
+  .stats li:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .path li { grid-template-columns: 76px minmax(0, 1fr); gap: 12px; }
+}
 </style>
 </head>
 <body>
@@ -145,23 +169,36 @@ footer a { color: inherit; }
     </div>
   </header>
 
+  <ul class="stats" aria-label="Ascend today">
+    <li><b>40</b><span>reps</span></li>
+    <li><b>5</b><span>teams</span></li>
+    <li><b>800,000</b><span>kWh in our best day</span></li>
+    <li><b>2</b><span>states</span></li>
+  </ul>
+
   <section aria-labelledby="h-about">
     <h2 id="h-about">About</h2>
     <p>I started Ascend Performance Marketing in January 2026 at 21. We are a door to door sales company that signs local families up for community solar. Subscribers get solar credits on their electric bill and pay less for those credits than they are worth, with no panels and nothing to install. The power comes from solar farms built right in their community.</p>
     <p>Today we have 40 reps on five teams: three in Albuquerque, one in Alamogordo and one in the Denver area of Colorado. We sign up subscribers for SunShare and US Solar, serving PNM customers in New Mexico and Xcel Energy customers in Colorado. Our best day so far was 800,000 kilowatt hours booked in a single day. I spend most of my time recruiting, training and leading the team, and I still knock doors.</p>
-    <p>I grew up in Knoxville, Tennessee, went to the Webb School of Knoxville, and played Division I soccer at East Tennessee State University. Building a sales floor turned out to demand the same things as a locker room: standards, coachability, and people who show up every day.</p>
+    <p>I grew up in Knoxville, Tennessee. At the Webb School of Knoxville I played on the 2021 soccer team that went 20 and 0 and won the Division II-A state championship, then played Division I soccer at East Tennessee State University. Building a sales floor turned out to demand the same things as a locker room: standards, coachability, and people who show up every day.</p>
   </section>
 
-  <section aria-labelledby="h-facts">
-    <h2 id="h-facts">At a glance</h2>
-    <ul class="facts">
-      <li><b>Now</b><span>Cofounder and CEO of Ascend Performance Marketing, with 40 reps on five teams across Albuquerque, Alamogordo and the Denver area</span></li>
-      <li><b>Partners</b><span>SunShare and US Solar, serving PNM customers in New Mexico and Xcel Energy customers in Colorado</span></li>
-      <li><b>From</b><span>Knoxville, Tennessee</span></li>
-      <li><b>School</b><span>Webb School of Knoxville, where I was vice president of the Latin club. Then East Tennessee State University, where I played Division I soccer</span></li>
-      <li><b>Record</b><span>800,000 kWh signed by the team in a single day</span></li>
-      <li><b>Hiring</b><span>Always looking for driven people who can relocate. <a href="https://www.ascendmarketing.org/#apply">Apply at Ascend</a></span></li>
-    </ul>
+  <figure class="photos" aria-label="Photos">
+    <img src="preston-holmes-solar-farm.jpg" width="640" height="800" alt="Preston Holmes under a solar panel at a community solar farm" loading="lazy">
+    <img src="community-solar-farm.jpg" width="640" height="800" alt="Rows of solar panels at a community solar farm under a blue sky" loading="lazy">
+    <figcaption>Out at a community solar farm, the kind our subscribers help support.</figcaption>
+  </figure>
+
+  <section aria-labelledby="h-path">
+    <h2 id="h-path">The path</h2>
+    <ol class="path">
+      <li><span class="when">Knoxville</span><span class="what"><b>Grew up in East Tennessee</b><span>Knoxville is home, and I am still a Tennessean.</span></span></li>
+      <li><span class="when">2021</span><span class="what"><b>State champions at Webb</b><span>The Webb School of Knoxville went 20 and 0 and won the Division II-A state title. I was also vice president of the school's Latin club.</span></span></li>
+      <li><span class="when">2023</span><span class="what"><b>Division I soccer at ETSU</b><span>Defender for the East Tennessee State Buccaneers men's soccer team. <a href="https://etsubucs.com/sports/mens-soccer/roster/preston-holmes/3111">Roster page</a></span></span></li>
+      <li><span class="when">The road</span><span class="what"><b>Door to door, every product</b><span>Pest control, political canvassing, satellite TV and fiber internet, where I built and managed a fiber sales team.</span></span></li>
+      <li><span class="when">2026</span><span class="what"><b>Started Ascend at 21</b><span>A door to door community solar company, started in January.</span></span></li>
+      <li><span class="when">Now</span><span class="what"><b>40 reps, five teams, two states</b><span>Albuquerque, Alamogordo and the Denver area, with a best day of 800,000 kWh. Next is a million.</span></span></li>
+    </ol>
   </section>
 
   <section aria-labelledby="h-links">
@@ -172,13 +209,16 @@ footer a { color: inherit; }
       <li><a href="https://www.instagram.com/preston_holmes_/">Instagram, work</a><span>@preston_holmes_</span></li>
       <li><a href="https://www.ascendmarketing.org/">Ascend Performance Marketing</a><span>ascendmarketing.org</span></li>
       <li><a href="https://www.instagram.com/ascendmarketing1/">Ascend on Instagram</a><span>@ascendmarketing1</span></li>
+      <li><a href="https://etsubucs.com/sports/mens-soccer/roster/preston-holmes/3111">ETSU men's soccer</a><span>roster page</span></li>
     </ul>
   </section>
 
-  <section aria-labelledby="h-contact">
-    <h2 id="h-contact">Contact</h2>
+  <section aria-labelledby="h-press">
+    <h2 id="h-press">For press</h2>
     <div class="note">
-      <p>Press, speaking and partnerships: <span class="email">prestonholmes@ascendmarketing.org</span></p>
+      <p>Preston Holmes is the cofounder and CEO of Ascend Performance Marketing, a door to door sales company that signs households up for community solar in New Mexico and Colorado. He started it in January 2026 at 21 and has grown it to 40 reps on five teams. He grew up in Knoxville, won a state title with the Webb School of Knoxville and played Division I soccer at East Tennessee State.</p>
+      <p>Interviews, speaking and partnerships: <span class="email">prestonholmes@ascendmarketing.org</span></p>
+      <p><a href="preston-holmes.jpg">Download the headshot</a></p>
     </div>
   </section>
 
